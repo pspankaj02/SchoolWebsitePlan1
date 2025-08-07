@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Springfield High School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <img src="https://i.postimg.cc/7ZvZbsDR/school-logo.png" alt="School Logo" class="logo">
+            <h1>Springfield High School</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#academics">Academics</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Welcome to Springfield High School</h2>
+            <p>Inspiring lifelong learners and responsible citizens.</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                Springfield High School is dedicated to nurturing the intellectual and personal growth of every student. Founded in 1985, our school boasts a diverse curriculum, outstanding staff, and a supportive community.
+            </p>
+            <ul>
+                <li>Established: 1985</li>
+                <li>Grades: 6-12</li>
+                <li>Accreditation: State Board Certified</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics">
+        <div class="container">
+            <h2>Academics</h2>
+            <p>We offer a range of subjects:</p>
+            <ul>
+                <li>Science (Physics, Chemistry, Biology)</li>
+                <li>Mathematics</li>
+                <li>English Literature & Language</li>
+                <li>Social Studies</li>
+                <li>Languages (Spanish, French, Hindi)</li>
+                <li>Arts and Sports</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                    <small class="error" id="nameError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                    <small class="error" id="emailError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <small class="error" id="messageError"></small>
+                </div>
+                <button type="submit">Send Message</button>
+                <div id="formSuccess" class="form-success"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Springfield High School. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
